@@ -1,0 +1,37 @@
+Hi Jagadeeswar,
+
+ 
+
+Thanks for the updates and the discussion with me and Bhanu last night.
+
+ 
+
+I am now clear with the timeline of this issue but not so much with the root cause and the clues of the subsequent failure in posting MM jobs. Appreciate the entire team working crazy hours during the past week to tackle both MM and C&I issues, if the posting job keeps failing, we will missing 10 days in total until the March month end, worth ~100M to 200M of revenue not booked in SAP.
+
+ 
+
+Hence if we could join force to keep up with the investigation and get it sorted, it will save all from huge pains.
+
+ 
+
+As raised during last discussion, a few points may worth consideration if it hasn't been explored. 
+
+ 
+
+1. Batch 3281 initially failed with full of posting errors, but completely successful after a second run - what change on config/environment has happened during the middle. What's the value in CURRENCYAMOUNT parameter before / after the re-run. 
+
+ 
+
+2. In the failed batches, always there are a few documents posted successfully despite others failed, what's the difference, esp. in the parameter 
+
+CURRENCYAMOUNT. 
+
+
+
+
+3. Any chance to see the difference on CURRENCYAMOUNT and its precendent AMT_BASE before and after the SAP UPGRADE? 
+
+
+
+
+4. What value does CURRENCYAMOUNT has for these failed documents, and can we track it back using the workflow to view the source data. 
